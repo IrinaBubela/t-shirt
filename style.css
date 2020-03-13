@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+.navbar{
+   border-bottom: rgba(218, 216, 204, 0.76) 1px solid;
+   height: 3em;
+   margin-bottom: 1em;
+}
+/* navbar */
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nav-link{
+    color: rgba(0, 0, 0, 0.705) !important;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: .3em;
+}
+
+.navbar-left a{
+    font-weight: 600;
+    font-size: 20px;
+}
+/* navbar */
+.left-side {
+    height: 90vh !important;
+    width: 40vw !important;
+    margin-left: -1em;
+    margin-right: 3em;
+    /* left: 0;
+    padding: 0;
+    margin: 0; */
+}
+
+.image-side{
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image-side img{
+    width: 70px;
+    height: 90px;
+    margin-top: 3em;
+    display: block;
+}
+
+.active-image{
+    border-bottom: 3px solid black;
+    opacity: 80%;
+}
+.container{
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 10em;
+    padding-bottom: 10em !important;
+    /* left: 5em; */
+    /* padding: 0 !importsant; */
+    margin-left: 5em !important;
+    /* width: 100vw !important; */
+}
+
+
+/* color */
+.checked {
+    color: orange;
+  }
+
+  #span-red{
+      color: red;
+  }
+
+  #span-grey{
+      color: grey;
+  } 
+
+  #color-boxes >div{
+    width: 30px;
+    height: 30px;
+}
+/* colors */
+
+ #colors{
+     width: 30%;
+ }
+
+#color-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#green-color{
+    background-color: green;
+}
+
+
+#black-color{
+    background-color: black;
+}
+
+
+#white-color{
+    background-color: rgb(235, 230, 230);
+} 
+
+
+/* select */
+
+#exampleFormControlSelect1{
+    width: 300px;
+}
+
+#exampleFormControlSelect2{
+    width: 150px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group{
+    margin-right: 50px;
+}
+
+.btn{
+    width: 500px;
+    height: 45px;
+}
+
+h6{
+    text-align: center;
+    padding-top: 2em;
+    color: grey ;
+}
