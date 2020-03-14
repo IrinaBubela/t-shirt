@@ -33,26 +33,27 @@
     <div class="container-fluid" id="content">
         <div class="row">
             <div class="side image-side col-md-1 box">
-                <img id="img1" class="active-image" src="img/first.jpg" alt="first">
+                <img id="img1" src="img/first.jpg" class="active-image" alt="first">
                 <img id="img2" src="img/second.jpg" alt="second">
-                <img src="img/third.jpg" alt="third">
+                <img id="img3" src="img/third.jpg" alt="third">
             </div>
-            <div class="side col-md-5  left-side box">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="side col-md-4  left-side box">
+                <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li class="slideEngine" data-target="#carouselExampleIndicators" data-slide-to="0"
+                            class="active"></li>
+                        <li class="slideEngine" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li class="slideEngine" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img id="img1Carousel" src="img/first.jpg" class="d-block w-100" alt="...">
+                            <img id="1" src="img/first.jpg" class="image d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img id="img2Carousel" src="img/second.jpg" class="d-block w-100" alt="...">
+                            <img id="2" src="img/second.jpg" class=" image d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/third.jpg" class="d-block w-100" alt="...">
+                            <img id="3" src="img/third.jpg" class=" image d-block w-100" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -73,8 +74,8 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <span><u>Read all 5 reviews</u></span>
-                    <h1>T-shirt z bawełny organicznej </h1>
-                    <h1><span id="span-red">189,50 zł</span> <span id="span-grey">379 zł (-50 %)</span></h1>
+                    <h3>T-shirt z bawełny organicznej </h3>
+                    <h3><span id="span-red">189,50 zł</span> <span id="span-grey">379 zł (-50 %)</span></h3>
                 </div>
 
                 <div id="description">
@@ -120,22 +121,96 @@
                 <h6>Sprawdź dostępność w sklepie</h6>
             </div>
         </div>
-    </div>
-    <div class="recommend">
-        <h1>POLECANE</h1>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img id="img1Carousel" src="img/first.jpg" class="d-block w-100" alt="...">
+        <h1 id="title">POLECANE</h1>
+        <div class="container">
+            <div class="row recommend">
+                <div class="cont">
+                    <img src="img/recommend-1.jpg">
+                    <div class="descr-recommend">
+                        <p>Botki na platformie</p>
+                        <p>79,99</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <img src="img/recommend-2.jpg">
+                    <div class="descr-recommend">
+                        <p>Spodnie jogger</p>
+                        <p>139,99</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <img src="img/recommend-3.jpg">
+                    <div class="descr-recommend">
+                        <p>Krótka spódnica jeansowa</p>
+                        <p>59,99</p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <img src="img/recommend-4.jpg">
+                    <div class="descr-recommend">
+                        <p>Spodenki jeansowe mom fit</p>
+                        <p>29,99</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img id="img2Carousel" src="img/second.jpg" class="d-block w-100" alt="...">
+        </div>
+
+        <h1 id="title">OCENY I OPINIE</h1>
+        <div class="card card-inner">
+            <div class="card-body">
+                <div class="comment-head">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>12 January, 2020</p>
+                </div>
+                <p>KUPIŁABYM JESZCZE RAZ</p>
+                <p>Koszulka do której wracam co 2 lata, bawełna dobrej jakości, jednak chyba coś się zmieniło w
+                    rozmiarze, kupowanu rozmiar M kiedyś nie był tak długi jak teraz.</p>
+
+                <p> Polecam ten produkt</p>
             </div>
-            <div class="carousel-item">
-                <img src="img/third.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <div class="comment-head">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>12 January, 2020</p>
+                </div>
+                <p>KUPIŁABYM JESZCZE RAZ</p>
+                <p>Koszulka do której wracam co 2 lata, bawełna dobrej jakości, jednak chyba coś się zmieniło w
+                    rozmiarze, kupowanu rozmiar M kiedyś nie był tak długi jak teraz.</p>
+
+                <p> Polecam ten produkt</p>
+            </div>
+            <div class="card-body">
+                <div class="comment-head">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>12 January, 2020</p>
+                </div>
+                <p>KUPIŁABYM JESZCZE RAZ</p>
+                <p>Koszulka do której wracam co 2 lata, bawełna dobrej jakości, jednak chyba coś się zmieniło w
+                    rozmiarze, kupowanu rozmiar M kiedyś nie był tak długi jak teraz.</p>
+
+                <p> Polecam ten produkt</p>
             </div>
         </div>
     </div>
-
+    </div>
     <script src="app.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

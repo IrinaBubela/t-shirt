@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: visible;
+    position: relative;
 }
 .navbar{
    border-bottom: rgba(218, 216, 204, 0.76) 1px solid;
@@ -33,9 +34,21 @@ body{
     width: 40vw !important;
     margin-left: -1em;
     margin-right: 3em;
-    /* left: 0;
-    padding: 0;
-    margin: 0; */
+}
+
+.right-side{
+  margin-top: 5em;
+}
+
+h1{
+  font-size: 20px !important;
+  color: rgb(75, 71, 71);
+  width: 20vw;
+  margin-top: 2em;
+}
+
+h3{
+    font-size: 28px !important;
 }
 
 .image-side{
@@ -58,13 +71,6 @@ body{
 }
 .container{
     width: 100vw;
-    height: 80vh;
-    margin-bottom: 10em;
-    padding-bottom: 10em !important;
-    /* left: 5em; */
-    /* padding: 0 !importsant; */
-    margin-left: 5em !important;
-    /* width: 100vw !important; */
 }
 
 
@@ -139,4 +145,54 @@ h6{
     text-align: center;
     padding-top: 2em;
     color: grey ;
+}
+
+
+#title{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.recommend{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70vw;
+    margin-top: 5em;
+   
+}
+
+.recommend img{
+    width:220px;
+    height: 240px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    text-align: center;
+}
+
+
+.comment-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card-body{
+    width: 60%;
 }
