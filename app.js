@@ -1,24 +1,35 @@
+$('#img1, #img2, #img3, #img4').click(function () {
+    toggleImage($(this).attr('id'));
+    $("#img1").removeClass('active-image');
+    $(this).siblings().removeClass('active-image');
+    $(this).toggleClass('active-image')
 
-const img1Carousel = document.getElementById('img1Carousel');
+})
 
+$('#green-color, #black-color, #white-color').click(function () {
+    $("#green-color").removeClass('active-image');
+    $(this).siblings().removeClass('active-image');
+    $(this).toggleClass('active-image')
 
-$('#img1, #img2, #img3').click(function () {
-    toggleImage($(this).attr('id'))
 })
 
 function toggleImage(imageId) {
-    console.log(imageId);
     if (imageId === "img1") {
         $(".image").attr('src', 'img/first.jpg');
-        $("slideEngine").toggleClass("active")
     }
     if (imageId === "img2") {
         $(".image").attr('src', 'img/second.jpg');
-        $("slideEngine").toggleClass("active")
     }
     if (imageId === "img3") {
         $(".image").attr('src', 'img/third.jpg');
-        $("slideEngine").toggleClass("active")
-    }
-};
+    };
+    if (imageId === "img4") {
+        $(".image").attr('src', 'img/fourth.jpg');
+    };
+}
 
+$("#scroll-to-reviews").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".reviews").offset().top
+    }, 1500);
+});

@@ -1,15 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: visible;
-    position: relative;
+    overflow-x: hidden;
 }
+
+/* NAVBAR */
 .navbar{
    border-bottom: rgba(218, 216, 204, 0.76) 1px solid;
    height: 3em;
    margin-bottom: 1em;
 }
-/* navbar */
+
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
@@ -20,7 +21,7 @@ body{
     color: rgba(0, 0, 0, 0.705) !important;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: .3em;
 }
 
@@ -28,35 +29,21 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
-/* navbar */
+
+
+/* MAIN-CONTENT */
 .left-side {
-    height: 90vh !important;
-    width: 40vw !important;
-    margin-left: -1em;
     margin-right: 3em;
-}
-
-.right-side{
-  margin-top: 5em;
-}
-
-h1{
-  font-size: 20px !important;
-  color: rgb(75, 71, 71);
-  width: 20vw;
-  margin-top: 2em;
-}
-
-h3{
-    font-size: 28px !important;
+    margin-left: 1em;
 }
 
 .image-side{
-    margin-left: 2em;
+    margin-left: 5em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 .image-side img{
     width: 70px;
@@ -66,35 +53,27 @@ h3{
 }
 
 .active-image{
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid black;
     opacity: 80%;
 }
-.container{
-    width: 100vw;
+
+#description p{
+font-size: 14px;
 }
 
 
-/* color */
+/* COLOR SELECTING */
 .checked {
     color: orange;
   }
 
-  #span-red{
-      color: red;
-  }
-
-  #span-grey{
-      color: grey;
-  } 
-
   #color-boxes >div{
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 }
-/* colors */
 
  #colors{
-     width: 30%;
+     width: 20%;
  }
 
 #color-boxes{
@@ -102,6 +81,7 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    cursor: pointer;
 }
 #green-color{
     background-color: green;
@@ -109,7 +89,7 @@ h3{
 
 
 #black-color{
-    background-color: black;
+    background-color: rgb(112, 48, 48);
 }
 
 
@@ -117,15 +97,14 @@ h3{
     background-color: rgb(235, 230, 230);
 } 
 
-
-/* select */
+/* SELECT FORM */
 
 #exampleFormControlSelect1{
-    width: 300px;
+    width: 270px;
 }
 
 #exampleFormControlSelect2{
-    width: 150px;
+    width: 130px;
 }
 form{
     display: flex;
@@ -133,33 +112,65 @@ form{
 }
 
 .form-group{
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .btn{
-    width: 500px;
+    width: 410px;
     height: 45px;
 }
 
-h6{
-    text-align: center;
-    padding-top: 2em;
-    color: grey ;
+
+/* FONTS */
+h1{
+  font-size: 20px !important;
+  color: rgb(75, 71, 71);
+  width: 100vw;
+  text-align: center;
+  margin: 5em 0 2em 0 !important;
+}
+
+h3{
+    font-size: 20px !important;
+    margin-top: .4em !important;
+}
+
+h5{
+font-size: 16px !important;
+color: rgba(0, 0, 0, 0.705) !important;
+margin-top: 2em !important;
+margin-bottom: 1.2em !important;
 }
 
 
+h6{
+    margin-left: 100px;
+    font-size: 14px !important;
+    padding-top: .8em;
+    color: grey ;
+    cursor: pointer;
+}
+
+#devide-content{
+    margin: 6em 0 1em 0 !important; 
+}
+/* RECOMMENDED */
+
 #title{
-    text-align: center;
     margin: 0px auto;
+}
+
+#title span{
+    cursor: pointer;
+    font-size: 14px;
+    
 }
 
 .recommend{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 70vw;
-    margin-top: 5em;
-   
+    width: 75vw;
 }
 
 .recommend img{
@@ -167,16 +178,20 @@ h6{
     height: 240px;
 }
 
-
+.descr-recommend p{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: flex;
     justify-content: center;
 }
 
-.cont{
+.recommend-content{
     text-align: center;
+    cursor: pointer;
 }
-
 
 .comment-head{
     display: flex;
@@ -184,15 +199,14 @@ h6{
 }
 
 
+/* REVIEWS */
 .card{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    border: none !important;
 }
 
 .card-body{
     width: 60%;
+    padding: 0 !important;
 }
