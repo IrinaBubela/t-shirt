@@ -27,9 +27,3 @@ function toggleImage(imageId) {
         $(".image").attr('src', 'img/fourth.jpg');
     };
 }
-
-$("#scroll-to-reviews").click(function () {
-    $('html, body').animate({
-        scrollTop: $(".reviews").offset().top
-    }, 1500);
-});

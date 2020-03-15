@@ -74,12 +74,12 @@
             </div>
             <div class="side col-md-5 right-side box">
                 <div id="title">
+                    <span data-toggle="modal" data-target="#myModal2"> Recenzje (4)</span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <span id="scroll-to-reviews"><u> Read all 3 reviews</u></span>
                     <h3>T-shirt z bawełny organicznej </h3>
                     <h3>189,50 zł</h3>
                 </div>
@@ -96,7 +96,7 @@
                 <h5>DOSTĘPNE KOLORY</h5>
                 <div id="colors">
                     <div id="color-boxes">
-                        <div id="green-color" class="active-color"></div>
+                        <div id="green-color" class="active-image"></div>
                         <div id="black-color"></div>
                         <div id="white-color"></div>
                     </div>
@@ -165,59 +165,92 @@
             </div>
         </div>
     </div>
-    <hr id="devide-content">
-    <h1 id="title" class="reviews">OCENY I OPINIE</h1>
-    <div class="card card-inner">
-        <div class="card-body">
-            <div class="comment-head">
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <p>12 Stycznia, 2020</p>
-            </div>
-            <p>KUPIŁABYM JESZCZE RAZ</p>
-            <p>Koszulka do której wracam co 2 lata, bawełna dobrej jakości, jednak chyba coś się zmieniło w
-                rozmiarze, kupowanu rozmiar M kiedyś nie był tak długi jak teraz.</p>
 
-            <p><img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
-            <hr>
-        </div>
-        <div class="card-body">
-            <div class="comment-head">
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p>23 Września, 2019</p>
-            </div>
-            <p>SUPER</p>
-            <p>Świetny fason.Polecam</p>
+    <div class="container demo">
+        <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel2">Recenzje (4)</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    </div>
 
-            <p><img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
-            <hr>
-        </div>
-        <div class="card-body">
-            <div class="comment-head">
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p>5 Maja, 2019</p>
-            </div>
-            <p>IDEALNA</p>
-            <p>Koszulka idealna, dopasowana stylowa nic dodać nic ująć.</p>
+                    <div class="modal-body">
+                        <div class="card card-inner">
+                            <div class="card-body">
+                                <div class="comment-head">
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <p>12 Stycznia, 2020</p>
+                                </div>
+                                <p id="name-review">Karolina</p>
+                                <p>Koszulka do której wracam co 2 lata, bawełna dobrej jakości, jednak chyba coś się
+                                    zmieniło w
+                                    rozmiarze, kupowanu rozmiar M kiedyś nie był tak długi jak teraz.</p>
 
-            <p> <img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
+                                <p><img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <div class="comment-head">
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                    </div>
+                                    <p>23 Września, 2019</p>
+                                </div>
+                                <p id="name-review">Mariola</p>
+                                <p>Świetny fason.Polecam</p>
+
+                                <p><img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <div class="comment-head">
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p>5 Maja, 2019</p>
+                                </div>
+                                <p id="name-review">Agata</p>
+                                <p>Koszulka idealna, dopasowana stylowa nic dodać nic ująć.</p>
+
+                                <p> <img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <div class="comment-head">
+                                    <div>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <p>4 Maja, 2019</p>
+                                </div>
+                                <p id="name-review">Ala</p>
+                                <p>Bardzo ładna, delikatna koszulka.</p>
+                                <p> <img src="img/foursquare-check-in.png" alt=""> Polecam ten produkt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>

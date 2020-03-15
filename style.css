@@ -21,7 +21,6 @@ body{
     color: rgba(0, 0, 0, 0.705) !important;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Oswald', sans-serif;
     margin: .3em;
 }
 
@@ -162,8 +161,9 @@ h6{
 
 #title span{
     cursor: pointer;
-    font-size: 14px;
-    
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 1em;
 }
 
 .recommend{
@@ -171,6 +171,7 @@ h6{
     flex-direction: row;
     justify-content: space-around;
     width: 75vw;
+    margin-bottom: 5em;
 }
 
 .recommend img{
@@ -207,6 +208,43 @@ h6{
 }
 
 .card-body{
-    width: 60%;
+    width: 85%;
     padding: 0 !important;
+}
+
+#name-review{
+    font-weight: 700;
+    color: rgba(41, 40, 40, 0.74);
+}
+
+*/
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: 0;
+    height: 100vw;
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.right.fade .modal-dialog {
+    right: -510px;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+#myModalLabel2{
+    width: 100%;
+    text-align: center;
+}
+
+.close{
+    font-size: 35px !important;
+    font-weight: 200;
 }
