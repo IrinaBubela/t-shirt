@@ -13,23 +13,14 @@ $('#green-color, #black-color, #white-color').click(function () {
 
 })
 
-function toggleImage(imageId) {
-    if (imageId === "img1") {
-        $(".image").attr('src', 'img/first.jpg');
-    }
-    if (imageId === "img2") {
-        $(".image").attr('src', 'img/second.jpg');
-    }
-    if (imageId === "img3") {
-        $(".image").attr('src', 'img/third.jpg');
-    };
-    if (imageId === "img4") {
-        $(".image").attr('src', 'img/fourth.jpg');
-    };
+idImageMap = {
+    "img1": 'img/first.jpg',
+    "img2": 'img/second.jpg',
+    "img3": 'img/third.jpg',
+    "img4": 'img/fourth.jpg',
 }
 
-$("#scroll-to-reviews").click(function () {
-    $('html, body').animate({
-        scrollTop: $(".reviews").offset().top
-    }, 1500);
-});
+function toggleImage(imageId) {
+    $(".image").attr('src', idImageMap[imageId]);
+}
+
