@@ -7,9 +7,9 @@ $('#img1, #img2, #img3, #img4').click(function () {
 })
 
 $('#green-color, #black-color, #white-color').click(function () {
-    $("#green-color").removeClass('active-image');
-    $(this).siblings().removeClass('active-image');
-    $(this).toggleClass('active-image')
+    $("#green-color").removeClass('active-side-image');
+    $(this).siblings().removeClass('active-side-image');
+    $(this).toggleClass('active-side-image')
 
 })
 
@@ -27,3 +27,9 @@ function toggleImage(imageId) {
         $(".image").attr('src', 'img/fourth.jpg');
     };
 }
+
+$("#scroll-to-reviews").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".reviews").offset().top
+    }, 1500);
+});

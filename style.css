@@ -47,7 +47,7 @@ body{
 .image-side img{
     width: 70px;
     height: 90px;
-    margin-top: 3em;
+    margin-bottom: 1.5em;
     display: block;
 }
 
@@ -55,6 +55,17 @@ body{
     border-bottom: 5px solid black;
     opacity: 80%;
 }
+.image-side>img:hover{
+    border-bottom: 5px solid black;
+    opacity: 80%;
+}
+
+.active-side-image{
+box-shadow:
+    0 0 0 6px hsl(0, 0%, 100%),
+    0 0 0 8px hsl(0, 0%, 90%);
+}
+
 
 #description p{
 font-size: 14px;
@@ -71,8 +82,14 @@ font-size: 14px;
     height: 27px;
 }
 
+#color-boxes>div:hover{
+    box-shadow:
+    0 0 0 6px hsl(0, 0%, 100%),
+    0 0 0 8px hsl(0, 0%, 90%);
+}
+
  #colors{
-     width: 20%;
+     width: 115px;
  }
 
 #color-boxes{
@@ -98,12 +115,13 @@ font-size: 14px;
 
 /* SELECT FORM */
 
+
 #exampleFormControlSelect1{
-    width: 270px;
+    width: 250px;
 }
 
 #exampleFormControlSelect2{
-    width: 130px;
+    width: 110px;
 }
 form{
     display: flex;
@@ -115,8 +133,8 @@ form{
 }
 
 .btn{
-    width: 410px;
-    height: 45px;
+    width: 370px;
+    height: 40px;
 }
 
 
@@ -155,9 +173,8 @@ margin-bottom: 1.2em !important;
 #devide-content{
     margin: 6em 0 1em 0 !important; 
 }
+
 /* RECOMMENDED */
-
-
 
 #title span{
     cursor: pointer;
@@ -262,19 +279,104 @@ margin-bottom: 1.2em !important;
     .modal.right.fade .modal-dialog {
         right: 0px;
     }
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 40%;
+    }
 
     .nav-link{
         font-size: 12px;
+        margin: .2em;
+    }
+
+    .image-side img{
+        width: 50px;
+        height: 60px;
+    }
+    .image-side{
+        margin-left: 3.5em;
+    }
+
+    .left-side {
+        margin-right: 1.5em;
+        margin-left: 1em;
+    }
+
+    .title-price-product{
+        font-size: 15px !important;
+        margin-top: .2em !important;
+    }
+
+    .title-description{
+        font-size: 13px !important;
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+    }
+    #exampleFormControlSelect1{
+        width: 190px;
     }
     
+    #exampleFormControlSelect2{
+        width: 60px;
+    }
+    .form-group{
+        margin-right: 10px;
+    }
+    
+    .btn{
+        width: 260px;
+        height: 35px;
+    }
+    
+    .check-availability{
+        margin-left: 40px;
+        font-size: 12px !important;
+    }
 }
 
-@media (max-width: 900px){
-   
+@media (max-width: 768px){
+    .image-side img{
+        width: 400px !important;
+        height: 500px;
+    }
+    .image-side{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left-side{
+        display: none;
+    }
+    .active-image{
+        opacity: 100;
+        border: none;
+    }
+    .right-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .check-availability{
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 700px){
+    .navbar-nav.navbar-center {
+       text-align: center;    
+    }
     .nav-link{
         font-size: 9px;
+    } 
+}
+
+@media (max-width: 600px){
+    .navbar-left{
+        display: none !important;
     }
 }
