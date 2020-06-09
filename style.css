@@ -4,14 +4,12 @@
     --price-color: rgb(210, 72, 30);
 }
 
-body{
-    overflow-x: hidden;
-}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -332,8 +330,8 @@ form{
     }
     
     .small-size-carousel img{
-        width: 65vw;
-        height: 100vh;
+        width: 75vw;
+        height:85vh;
     }
 }
 
@@ -377,6 +375,9 @@ form{
         width: 80vw;
     }
 
+    .recommended-items hr{
+        margin: 2em 0  !important;
+    }
     
 }
 
