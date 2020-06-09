@@ -4,8 +4,9 @@
     --price-color: rgb(210, 72, 30);
 }
 
-body{
-    overflow-x: hidden;
+body, 
+html {
+    overflow-x:hidden;
 }
 
 *{
@@ -40,7 +41,7 @@ body{
 .nav-link {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     margin: 0px 10px;
     display: inline-block;
     position: relative;
@@ -254,12 +255,12 @@ form{
 .recommended-items .container{
     display: flex;
     justify-content: space-between;
-    min-width: 100vw
+    width: 100vw
 }
 
 .recommended-content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 95vw;
     margin-top: 5em;
 }
@@ -323,6 +324,7 @@ form{
     .recommended-content img{
         width:270px;
         height: 280px;
+        margin-right: 10px;
     }
 
     .left-side{
