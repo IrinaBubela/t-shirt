@@ -4,12 +4,14 @@
     --price-color: rgb(210, 72, 30);
 }
 
+body{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -330,14 +332,22 @@ form{
     }
     
     .small-size-carousel img{
-        width: 75vw;
-        height:85vh;
+        width: 65vw;
+        height:70vh;
+    }
+
+    .recommended-items hr{
+
+        margin: 2em 0  !important;
     }
 }
 
 
 @media (max-width:700px){
-
+    body{
+        overflow-x: hidden;
+    }
+    
     .pos-f-t{
         display: block;
         background: #ddd !important; 
@@ -374,10 +384,5 @@ form{
     #exampleFormControlSelect2{
         width: 80vw;
     }
-
-    .recommended-items hr{
-        margin: 2em 0  !important;
-    }
-    
 }
 
