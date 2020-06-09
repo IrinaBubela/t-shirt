@@ -289,6 +289,10 @@ form{
     padding: 0 !important;
 }
 
+.comment-head{
+    display: flex;
+    justify-content: space-between;
+}
 .close{
     font-size: 35px !important;
     font-weight: 200;
