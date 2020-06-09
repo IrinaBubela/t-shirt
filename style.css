@@ -248,6 +248,7 @@ form{
 
 .recommended-items hr{
     margin: 5em 0  !important;
+    width: 100vw;
 }
 
 .recommended-items .container{
@@ -336,25 +337,23 @@ form{
     }
     
     .small-size-carousel img{
-        width: 85vw;
-        height:85vh;
+        width: 90vw;
+        height:80vh;
     }
 
     .recommended-items hr{
-
+        width: 98vw;
         margin: 2em 0  !important;
     }
 }
 
 
 @media (max-width:700px){
-    body{
-        overflow-x: hidden;
-    }
 
     .pos-f-t{
         display: block;
         background: #ddd !important; 
+        overflow: hidden;
     }
 
     .pos-f-t{
