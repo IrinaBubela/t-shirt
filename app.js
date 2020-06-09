@@ -23,4 +23,5 @@ idImageMap = {
 function toggleImage(imageId) {
     $(".image").attr('src', idImageMap[imageId]);
 }
+$('.modal').css('overflow-y', 'auto');
 
