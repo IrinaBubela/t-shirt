@@ -332,8 +332,8 @@ form{
     }
     
     .small-size-carousel img{
-        width: 65vw;
-        height:70vh;
+        width: 85vw;
+        height:85vh;
     }
 
     .recommended-items hr{
@@ -347,7 +347,7 @@ form{
     body{
         overflow-x: hidden;
     }
-    
+
     .pos-f-t{
         display: block;
         background: #ddd !important; 
