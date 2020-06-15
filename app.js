@@ -4,4 +4,3 @@ $('#green-color, #black-color, #white-color').click(function () {
     $(this).toggleClass('active-side-image')
 
 })
-
